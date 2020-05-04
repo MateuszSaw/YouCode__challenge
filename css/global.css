@@ -3,3 +3,11 @@
 *::before {
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Source Sans Pro', sans-serif;
+}
