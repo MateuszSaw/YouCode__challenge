@@ -11,13 +11,13 @@
         position: relative;
         z-index: 0;
     }
-    
+
     @media(max-width: 767px) {
         .about-us {
             margin: -40px 0px;
         }
     }
-    
+
     .about-us::after {
         content: "";
         background: rgba(0, 0, 0, 0.5);
@@ -28,20 +28,20 @@
         right: 0;
         z-index: -1;
     }
-    
+
     .about-us__header {
         max-width: 900px;
         font-size: 50px;
         text-align: center;
         font-weight: 900;
     }
-    
+
     @media(max-width: 767px) {
         .about-us__header {
             font-size: 40px;
         }
     }
-    
+
     .about-us__paragraph {
         max-width: 500px;
         text-align: center;
@@ -51,7 +51,7 @@
         line-height: 2;
         margin: 10px;
     }
-    
+
     .about-us__button {
         border: 2px solid #fb414e;
         margin: 40px 10px;
@@ -60,17 +60,17 @@
         padding: 10px 30px;
         font-weight: 900;
     }
-    
+
     @media(max-width: 767px) {
         .about-us__buttons {
             display: flex;
         }
     }
-    
+
     .container-bg-color {
         background: #fb414e;
     }
-    
+
     .about-us__button:hover {
         background: black;
         transition: 0.3s;
