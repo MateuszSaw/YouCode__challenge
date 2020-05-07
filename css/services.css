@@ -55,12 +55,6 @@
     grid-gap: 80px;
 }
 
-@media(max-width: 1099px) {
-    .services__tiles {
-
-    }
-}
-
 @media(max-width: 767px) {
     .services__tiles {
         grid-template-columns: repeat(1, 1fr);
