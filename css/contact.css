@@ -1,0 +1,137 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__container {
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width: 767px) {
+
+    .contact__container {
+        max-width: unset;
+        flex-wrap: wrap;
+    }
+}
+
+.contact__text {
+    width: 45%;
+    text-align: right;
+}
+@media(max-width: 767px) {
+
+    .contact__text {
+        text-align: center;
+        padding: 0 55px;
+        margin-bottom: 50px;
+    }
+}
+
+.contact__header {
+    margin-top: 0;
+    font-size: 50px;
+    font: bold;
+}
+
+.contact__paragraph {
+    font-weight: 300;
+    color: #9e9e9e;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* contact form */
+
+.contact__form {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 55px 10px 55px;
+    width: 45%;
+}
+
+
+@media(max-width: 1199px) {
+
+    .contact__text,
+    .contact__form {
+        width: 100%;
+    }
+}
+
+.contact-form__field {
+    height: 55px;
+    border: 1px solid #e6e6e6;
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #666666;
+    line-height: 1.2;
+    padding: 0 25px;
+    outline: none;
+    text-align: right;
+}
+
+@media(max-width: 767px){
+    .contact-form__field {
+        margin-bottom: 25px;
+    }
+}
+
+.contact-form__field:focus {
+    border: 1px solid #abb8ca;
+    animation-name: zoom_for_input;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom_for_input {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contact-form__field-smaller {
+    width: 50%;
+}
+
+@media(max-width: 767px){
+    .contact-form__field-smaller {
+        width: 100%;
+    }
+}
+.contact-form__field-text-area {
+    min-height: 100px;
+    padding-top: 19px;
+    padding-bottom: 5px;
+}
+
+.contact__form-submit-button {
+    width: 100%;
+    height: 55px;
+    display: block;
+    border: none;
+    background: #fb414e;
+    /* padding: 10px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.contact__form-submit-button:hover {
+    background: grey;
+}

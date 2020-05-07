@@ -17,6 +17,7 @@
     <link href="/css/navigation.css" rel="stylesheet">
     <link href="/css/services.css" rel="stylesheet">
     <link href="/css/gallery.css" rel="stylesheet">
+    <link href="/css/contact.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,17 +47,17 @@
                             </a>
                         </li>
                         <li class="nav__menu-item">
-                            <a href="#" class="nav__menu-link">
+                            <a href="#services" class="nav__menu-link">
                                 Services
                             </a>
                         </li>
                         <li class="nav__menu-item">
-                            <a href="#" class="nav__menu-link">
+                            <a href="#gallery" class="nav__menu-link">
                                 Works
                             </a>
                         </li>
                         <li class="nav__menu-item">
-                            <a href="#" class="nav__menu-link">
+                            <a href="#contact" class="nav__menu-link">
                                 Contact
                             </a>
                         </li>
@@ -112,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <h4 class="services__small-text">Services</h4>
             <h2 class="services__header">Best services for <span class="header__text-color">visual perfrction</span>
             </h2>
@@ -200,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="gallery__box">
                 <div class="gallery__box-item">
                     <img src="images/gallery/1.jpg" alt="" class="gallery__box-image">
@@ -226,9 +227,54 @@
                 <div class="gallery__box-item">
                     <img src="/images/gallery/8.jpg" alt="" class="gallery__box-image">
                 </div>
-
-
             </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact__container">
+                    <div class="contact__text ">
+                        <div class="contact__item">
+                            <h3 class="contact__header">Want to have a professional project? Let's talk about it.</h3>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__paragraph">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus omnis nemo
+                                reiciendis molestias ducimus animi tempora nobis, dicta sint at adipisci quo alias!
+                                Velit
+                                earum qui modi quaerat aspernatur.
+                            </p>
+                            <p class="contact__paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus dolorum et
+                                tempora repudiandae esse? Ex soluta ab expedita, eos natus voluptatem modi molestiae
+                                consequuntur maiores sed temporibus dolore. Facilis!
+                            </p>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <input name="name" id="name" class="contact-form__field" required placeholder="your name*"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='your name*'">
+                        <input name="company_name" id="company_name"
+                            class="contact-form__field contact-form__field-smaller" required placeholder="company name*"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='company name*'">
+                        <input name="email" id="email" type="email"
+                            class="contact-form__field contact-form__field-smaller" required placeholder="email adress*"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='email address*'">
+                        <select name="select_service" id="select_service" type="text" class="contact-form__field"
+                            placeholder="select service*" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='select service*'">
+                            <option value="Strategy"></option>
+                            <option value="Marketing"></option>
+                            <option value="Technology"></option>
+                            <option value="eCommerce"></option>
+                            <option value="Branding"></option>
+                            <option value="SEO Identify"></option>
+                            </select>
+                        <textarea placeholder="decribe your project"
+                            class="contact-form__field contact-form__field-text-area" name="message" id="message"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='describe your project'"></textarea>
+                        <button type="button" name="submit" id="submit"
+                            class="contact__form-submit-button">Submit</button>
+                    </form>
+                </div>
         </section>
     </main>
 </body>

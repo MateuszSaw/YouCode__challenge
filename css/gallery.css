@@ -1,5 +1,5 @@
 .gallery {
-    padding: 100px 50px;
+    margin: 200px 50px;
 }
 
 .gallery__box {
@@ -34,4 +34,8 @@
     left: 0;
     top: 0;
     object-fit: cover;
+}
+.gallery__box-image:hover {
+    opacity: 0.8;
+    transition: .5s ease-in-out;
 }
