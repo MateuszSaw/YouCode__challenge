@@ -6,48 +6,108 @@
     <title>YouCode Company- najlepsze miejsce do rozwoju</title>
     <meta name="description" content="Tu znajdziesz wszystkie niezbędne informację o naszej firmię">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
     <link href="/css/global.css" rel="stylesheet">
     <link href="/css/about-us.css" rel="stylesheet">
-    <link href="/css/services.css" rel="stylesheet">
+    <link href="/css/tiles.css" rel="stylesheet">
+    <link href="/css/navigation.css" rel="stylesheet">
 </head>
 
 <body>
     <main>
+        <header class="nav-header">
+            <div class="container--header">
+                <img class="nav-header__logo-image" src="images/logo.png" alt="logo image">
+                <nav class="navigation">
+                    <ul class="nav__menu-list js-nav__menu-list">
+                        <div class="nav__mobile-tiles ">
+                            <li class="nav__menu-item nav__menu-item-mobile">
+                                    <button class="nav__mobile-button">
+                                                <img class="nav__mobile-button-image-back
+                                                js-nav__mobile-button-image-back"
+                                                 src="images/mobile-menu-back.png"
+                                                alt="Zamknij nawigacje">
+                                    </button>
+                            </li>
+                            <li class="nav__menu-item">
+                                <a href="#" class="nav__menu-link">
+                                    Back
+                                </a>
+                            </li>
+                        </div>
+                        <li class="nav__menu-item">
+                            <a href="#" class="nav__menu-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="#" class="nav__menu-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="#" class="nav__menu-link">
+                                Works
+                            </a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="#" class="nav__menu-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="button-wrapper">
+                        <button class="nav__mobile-button js-nav__mobile-button">
+                            <img class="nav__mobile-button-image"
+                            src="images/navigation.svg" alt="Otwórz nawigacje">
+                        </button>
+                    </div>
+            </div>
+            </nav>
+            </button>
+        </header>
+        <script src="/js/nav.js"></script>
         <section class="about-us">
             <h1 class="about-us__header">
                 Helping Buisness And Companies Innovate And Transform
             </h1>
             <p class="about-us__paragraph">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis hic ea nihil nulla suscipit atque illo tempora perspiciatis, ut praesentium corrupti fuga eos eveniet deleniti libero, ex amet quia ipsum!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis hic ea nihil nulla suscipit atque
+                illo tempora perspiciatis, ut praesentium corrupti fuga eos eveniet deleniti libero, ex amet quia ipsum!
             </p>
             <div class="about-us__buttons">
                 <button class="about-us__button container-bg-color">Start Now</button>
                 <button class="about-us__button">Our Services</button>
             </div>
         </section>
-        <section class="services">
-            <div class="services__container">
-                <div class="services__box services__box--color">
-                    <img class="services__icon" src="images/tiles/content-concept-strategy.svg" alt="">
-                    <h2 class="services__header">Content Concept & Strategy</h2>
-                    <p class="services__paragraph">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quos cupiditate delectus aspernatur deserunt cum minima cumque.
+        <section class="tiles">
+            <div class="tiles__container">
+                <div class="tiles__box tiles__box--color">
+                    <img class="tiles__icon" src="images/tiles/content-concept-strategy.svg" alt="">
+                    <h2 class="tiles__header">Content Concept & Strategy</h2>
+                    <p class="tiles__paragraph">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quos cupiditate delectus
+                        aspernatur deserunt cum minima cumque.
                     </p>
                 </div>
-                <div class="services__box">
-                    <img class="services__icon" src="images/tiles/design-conscepts.svg" alt="">
-                    <h2 class="services__header">Design & Concept</h2>
-                    <p class="services__paragraph">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quos cupiditate delectus aspernatur deserunt cum minima cumque.
+                <div class="tiles__box">
+                    <img class="tiles__icon" src="images/tiles/design-conscepts.svg" alt="">
+                    <h2 class="tiles__header">Design & Concept</h2>
+                    <p class="tiles__paragraph">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quos cupiditate delectus
+                        aspernatur deserunt cum minima cumque.
                     </p>
                 </div>
-                <div class="services__box">
-                    <img class="services__icon" src="images/tiles/seo-marketing.svg" alt="">
-                    <h2 class="services__header">SEO & Marketing Solution</h2>
-                    <p class="services__paragraph">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quos cupiditate delectus aspernatur deserunt cum minima cumque.
+                <div class="tiles__box">
+                    <img class="tiles__icon" src="images/tiles/seo-marketing.svg" alt="">
+                    <h2 class="tiles__header">SEO & Marketing Solution</h2>
+                    <p class="tiles__paragraph">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quos cupiditate delectus
+                        aspernatur deserunt cum minima cumque.
                     </p>
                 </div>
             </div>

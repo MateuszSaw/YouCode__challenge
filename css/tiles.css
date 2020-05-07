@@ -1,4 +1,4 @@
-        .services {
+        .tiles {
             width: 100%;
             margin-top: -100px;
             margin-bottom: 300px;
@@ -7,28 +7,28 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         @media(max-width: 767px) {
-            .services {
+            .tiles {
                 margin-top: -40px;
             }
         }
-        
-        .services__container {
+
+        .tiles__container {
             max-width: 1200px;
             position: relative;
             display: flex;
             justify-content: center;
         }
-        
+
         @media(max-width: 767px) {
-            .services__container {
+            .tiles__container {
                 flex-direction: column;
                 align-items: center;
             }
         }
-        
-        .services__box {
+
+        .tiles__box {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -38,24 +38,24 @@
             padding: 30px;
             min-height: 400px;
         }
-        
+
         @media(max-width: 767px) {
-            .services__box {
+            .tiles__box {
                 width: 90%;
             }
         }
-        
-        .services__box--color {
+
+        .tiles__box--color {
             background: #fb414e;
         }
-        
-        .services__header {
+
+        .tiles__header {
             font-size: 18px;
             position: relative;
             text-align: left;
         }
-        
-        .services__header::after {
+
+        .tiles__header::after {
             content: "";
             position: absolute;
             bottom: -30px;
@@ -63,13 +63,13 @@
             width: 30px;
             border-bottom: 3px solid white;
         }
-        
-        .services__paragraph {
+
+        .tiles__paragraph {
             font-size: 14px;
             line-height: 2;
         }
-        
-        .services__icon {
+
+        .tiles__icon {
             width: 50px;
             height: 50px;
             fill: white;
