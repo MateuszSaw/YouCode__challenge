@@ -73,6 +73,7 @@
         </header>
         <script src="/js/nav.js"></script>
         <section class="about-us">
+            <div class="about-us__main-banner">
             <h1 class="about-us__header">
                 Helping Buisness And Companies Innovate And Transform
             </h1>
@@ -84,6 +85,7 @@
                 <button class="about-us__button container-bg-color">Start Now</button>
                 <button class="about-us__button">Our Services</button>
             </div>
+        </div>
         </section>
         <section class="tiles">
             <div class="tiles__container">
@@ -231,50 +233,49 @@
         </section>
         <section class="contact" id="contact">
             <div class="contact__container">
-                    <div class="contact__text ">
-                        <div class="contact__item">
-                            <h3 class="contact__header">Want to have a professional project? Let's talk about it.</h3>
-                        </div>
-                        <div class="contact__item">
-                            <p class="contact__paragraph">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus omnis nemo
-                                reiciendis molestias ducimus animi tempora nobis, dicta sint at adipisci quo alias!
-                                Velit
-                                earum qui modi quaerat aspernatur.
-                            </p>
-                            <p class="contact__paragraph">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus dolorum et
-                                tempora repudiandae esse? Ex soluta ab expedita, eos natus voluptatem modi molestiae
-                                consequuntur maiores sed temporibus dolore. Facilis!
-                            </p>
-                        </div>
+                <div class="contact__text ">
+                    <div class="contact__item">
+                        <h3 class="contact__header">Want to have a professional project? Let's talk about it.</h3>
                     </div>
-                    <form class="contact__form">
-                        <input name="name" id="name" class="contact-form__field" required placeholder="your name*"
-                            onfocus="this.placeholder=''" onblur="this.placeholder='your name*'">
-                        <input name="company_name" id="company_name"
-                            class="contact-form__field contact-form__field-smaller" required placeholder="company name*"
-                            onfocus="this.placeholder=''" onblur="this.placeholder='company name*'">
-                        <input name="email" id="email" type="email"
-                            class="contact-form__field contact-form__field-smaller" required placeholder="email adress*"
-                            onfocus="this.placeholder=''" onblur="this.placeholder='email address*'">
-                        <select name="select_service" id="select_service" type="text" class="contact-form__field"
-                            placeholder="select service*" onfocus="this.placeholder=''"
-                            onblur="this.placeholder='select service*'">
-                            <option value="Strategy"></option>
-                            <option value="Marketing"></option>
-                            <option value="Technology"></option>
-                            <option value="eCommerce"></option>
-                            <option value="Branding"></option>
-                            <option value="SEO Identify"></option>
-                            </select>
-                        <textarea placeholder="decribe your project"
-                            class="contact-form__field contact-form__field-text-area" name="message" id="message"
-                            onfocus="this.placeholder=''" onblur="this.placeholder='describe your project'"></textarea>
-                        <button type="button" name="submit" id="submit"
-                            class="contact__form-submit-button">Submit</button>
-                    </form>
+                    <div class="contact__item">
+                        <p class="contact__paragraph">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus omnis nemo
+                            reiciendis molestias ducimus animi tempora nobis, dicta sint at adipisci quo alias!
+                            Velit
+                            earum qui modi quaerat aspernatur.
+                        </p>
+                        <p class="contact__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus dolorum et
+                            tempora repudiandae esse? Ex soluta ab expedita, eos natus voluptatem modi molestiae
+                            consequuntur maiores sed temporibus dolore. Facilis!
+                        </p>
+                    </div>
                 </div>
+                <form class="contact-form">
+                    <input name="name" class="contact-form__field" required placeholder="your name*"
+                        onfocus="this.placeholder=''" onblur="this.placeholder='your name*'">
+                    <div class="contact-form__field-wrapper">
+                        <input name="company_name" class="contact-form__field field-margin-right" required
+                            placeholder="company name*" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='company name*'">
+                        <input name="email" type="email" class="contact-form__field field-margin-left"
+                            required placeholder="email adress*" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='email address*'">
+                    </div>
+                    <select name="select_service" class="contact-form__field contact-form__select">
+                        <option value="Strategy">Strategy</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Technology">Technology</option>
+                        <option value="eCommerce">eCommerce</option>
+                        <option value="Branding">Branding</option>
+                        <option value="SEO Identify">SEO Identify</option>
+                    </select>
+                    <textarea placeholder="decribe your project"
+                        class="contact-form__field contact-form__field-text-area" name="message" id="message"
+                        onfocus="this.placeholder=''" onblur="this.placeholder='describe your project'"></textarea>
+                    <button type="button" name="submit" class="contact__form-submit-button">Submit</button>
+                </form>
+            </div>
         </section>
     </main>
 </body>
